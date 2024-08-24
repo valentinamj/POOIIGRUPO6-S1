@@ -20,7 +20,6 @@ public class main {
         Superficie_Plana superficie = new Superficie_Plana();
         superficie.agregarFigura(triangulo);
 
-        // Obtener y mostrar áreas
         List<Double> areas = superficie.obtenerArea();
         for (Double area : areas) {
             System.out.println("Area del triangulo es: " + area+ "cm^2");
