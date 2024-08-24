@@ -1,0 +1,26 @@
+4. Identificar las clases que heredan, ¿qué atributos y métodos heredan?
+
+Cuando se nos habla de herencia debemos tener en cuenta que se refiere a la relación que existe entre una subclase que hereda los atributos y métodos de una superclase. Para este ejercicio 2, la superclase es la clase Figura_geometrica y la subclase es la clase Triangulo que hereda de Figura_Geometrica los atributos como el nombre y los métodos definidos dentro de esta misma, como getNombre o cualquier otro método no abstracto. 
+
+5. Identificar las clases que conforman una composición.
+
+Las clases que conforman una composición para este ejercicio son la clase Punto y Triangulo. Esto, debido a que la clase Triangulo tiene 3 atributos (punto1, punto2 y punto3)de tipo Punto. Es decir, la clase Triangulo está compuesta por instancias de la clase Punto. 
+
+6. ¿Qué es una superclase y una subclase?
+
+Por un lado, una superclase es una clase la cual cuenta con atributos y métodos, los cuales pueden ser heredados por clase o clases. Por otro lado, una subclase, es aquella que puede usar los métodos y atributos establecidos en una superclase. Cabe destacar, Tambien puede tener atributos y métodos propios.
+
+7. ¿Por qué usamos abstract? ¿Se puede dejar de heredar un método de una clase abstracta?
+
+Usamos abstract porque no podemos crear objetos en una clase directamente. Solo se puede utilizar para crear otras clases. Podemos también definir métodos abstractos como métodos sin cuerpo, lo que significa que solo se pueden utilizar en las subclases y no en la clase abstracta. Además, no se puede dejar de heredar un método de una clase abstracta, si una subclase hereda de una clase abstracta, se deben implementarse todos los métodos abstractos de la superclase. La unica excepción es si la subclase se declara como abstract.
+
+8. ¿Qué anotación utilizo para sobreescribir métodos?
+Para sobreescribir me dirijo a Insert Code, posteriormente a toString() y con ello automáticamente, utilizamos la anotación @override. Esto mayormente lo uso como un indicador para saber si el código va por buen camino y hacer pruebas. 
+
+9. Los atributos de la clase Figura Geométrica conviértalas en protected. ¿En qué condición convierte a los atributos? ¿Es posible acceder a los atributos protegidos sin utilizar una invocación a super() o sin método get?.
+Protected convierte a los atributos en accesibles desde cualquier clase que pertenezca al mismo paquete y desde cualquier subclase, sin tomar en cuenta sí se encuentra en el mismo o otro paquete. Por otro lado, si es posible acceder a los atributos protegidos sin utilizar la invocación super() o sin el método get siempre y cuando se encuentren en una subclase, ya que la subclase puede heredar los atributos.  
+
+10. ¿Cómo aplicarías polimorfismo?.
+
+Para aplicar polimorfismo, tendría que aumentar las subclases como por ejemplo, aparte de la clase Tringulo, adicionar Circulo, Trapecio, etc. Esto haría que la superclase apunte a varias subclases a la vez. Cumpliendo entonces con el concepto de polimorfismo.  
+
